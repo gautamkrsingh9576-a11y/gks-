@@ -1,0 +1,168 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="610" viewBox="0 0 1180 610" role="img" aria-label="Premium developer profile template in a dark terminal interface">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#030712"/>
+      <stop offset="0.52" stop-color="#07111F"/>
+      <stop offset="1" stop-color="#0B1220"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="18%" cy="15%" r="70%">
+      <stop offset="0" stop-color="#7C3AED" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#7C3AED" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="85%" cy="82%" r="65%">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7C3AED">
+        <animate attributeName="stop-color" values="#7C3AED;#22D3EE;#10B981;#7C3AED" dur="12s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset=".5" stop-color="#22D3EE">
+        <animate attributeName="stop-color" values="#22D3EE;#10B981;#7C3AED;#22D3EE" dur="12s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="1" stop-color="#10B981">
+        <animate attributeName="stop-color" values="#10B981;#7C3AED;#22D3EE;#10B981" dur="12s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <linearGradient id="glassLine" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".22"/>
+      <stop offset=".35" stop-color="#FFFFFF" stop-opacity=".04"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity=".10"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#94A3B8" stroke-opacity=".055" stroke-width="1"/>
+    </pattern>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="#F8FAFC" opacity=".025"/>
+    </pattern>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#000000" flood-opacity=".34"/>
+    </filter>
+    <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="portraitClip"><rect x="48" y="100" width="390" height="332" rx="20"/></clipPath>
+    <mask id="nameReveal">
+      <rect x="0" y="0" width="650" height="70" fill="black"/>
+      <rect x="540" y="126" width="540" height="54" fill="white">
+        <animate attributeName="width" values="0;540;540" keyTimes="0;.18;1" dur="6s" repeatCount="indefinite"/>
+      </rect>
+    </mask>
+  </defs>
+
+  <rect x="1" y="1" width="1178" height="608" rx="24" fill="url(#bg)"/>
+  <rect x="1" y="1" width="1178" height="608" rx="24" fill="url(#glowA)"/>
+  <rect x="1" y="1" width="1178" height="608" rx="24" fill="url(#glowB)"/>
+  <rect x="1" y="1" width="1178" height="608" rx="24" fill="url(#grid)"/>
+  <rect x="1" y="1" width="1178" height="608" rx="24" fill="url(#scan)"/>
+
+  <g opacity=".9">
+    <circle cx="86" cy="72" r="2" fill="#22D3EE"><animate attributeName="cy" values="72;56;72" dur="8s" repeatCount="indefinite"/></circle>
+    <circle cx="1080" cy="92" r="2" fill="#7C3AED"><animate attributeName="cy" values="92;112;92" dur="11s" repeatCount="indefinite"/></circle>
+    <circle cx="1040" cy="525" r="1.6" fill="#10B981"><animate attributeName="cx" values="1040;1064;1040" dur="10s" repeatCount="indefinite"/></circle>
+    <circle cx="510" cy="54" r="1.4" fill="#94A3B8"><animate attributeName="opacity" values=".15;.75;.15" dur="5s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <rect x="20" y="20" width="1140" height="570" rx="20" fill="#0F172A" fill-opacity=".28" stroke="url(#glassLine)" stroke-width="1.2" filter="url(#shadow)"/>
+  <rect x="20.5" y="20.5" width="1139" height="569" rx="19.5" fill="none" stroke="url(#accent)" stroke-opacity=".28" stroke-width="1">
+    <animate attributeName="stroke-opacity" values=".18;.42;.18" dur="7s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- editor chrome -->
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace">
+    <circle cx="48" cy="50" r="5" fill="#FB7185"/>
+    <circle cx="66" cy="50" r="5" fill="#FBBF24"/>
+    <circle cx="84" cy="50" r="5" fill="#34D399"/>
+    <text x="112" y="55" font-size="13" fill="#CBD5E1">developer@profile:~</text>
+    <rect x="1022" y="37" width="110" height="26" rx="13" fill="#10B981" fill-opacity=".10" stroke="#10B981" stroke-opacity=".28"/>
+    <circle cx="1041" cy="50" r="4" fill="#34D399"><animate attributeName="opacity" values=".45;1;.45" dur="2.2s" repeatCount="indefinite"/></circle>
+    <text x="1053" y="55" font-size="11" letter-spacing="1.5" fill="#A7F3D0">ONLINE</text>
+    <line x1="40" y1="76" x2="1140" y2="76" stroke="#94A3B8" stroke-opacity=".11"/>
+  </g>
+
+  <!-- LEFT / VISUAL.MAP -->
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace">
+    <text x="48" y="100" font-size="11" letter-spacing="2.4" fill="#67E8F9">VISUAL.MAP</text>
+    <rect x="48" y="116" width="390" height="314" rx="20" fill="#020617" fill-opacity=".40" stroke="#94A3B8" stroke-opacity=".14"/>
+    <rect x="60" y="128" width="366" height="290" rx="15" fill="#0B1220" fill-opacity=".30" stroke="#7C3AED" stroke-opacity=".10"/>
+
+    <!-- abstract dot-matrix identity placeholder: deliberately not a human portrait -->
+    <g clip-path="url(#portraitClip)" transform="translate(91 148)" fill="#7DD3FC">
+      <g opacity=".16">
+        <path d="M0 0H310M0 24H310M0 48H310M0 72H310M0 96H310M0 120H310M0 144H310M0 168H310M0 192H310M0 216H310" stroke="#22D3EE" stroke-width="1" stroke-dasharray="2 8"/>
+      </g>
+      <g font-size="13" letter-spacing="3.2">
+        <text x="14" y="25" opacity=".28">······::++**##%%@@%%##**++::······</text>
+        <text x="14" y="47" opacity=".34">····::++**##%%@@@%%##**++::·······</text>
+        <text x="14" y="69" opacity=".42">··::++**##%%@@%%%%@@%%##**++::·····</text>
+        <text x="14" y="91" opacity=".56">::++**##%%@@%%##%%@@%%##**++::·····</text>
+        <text x="14" y="113" opacity=".70">++**##%%@@%%##****##%%@@%%##**++::··</text>
+        <text x="14" y="135" opacity=".82">**##%%@@%%##**++++**##%%@@%%##**++::</text>
+        <text x="14" y="157" opacity=".90">##%%@@%%##**++::::++**##%%@@%%##**++</text>
+        <text x="14" y="179" opacity=".76">%%@@%%##**++::····::++**##%%@@%%##**</text>
+        <text x="14" y="201" opacity=".60">@@%%##**++::········::++**##%%@@%%##</text>
+        <text x="14" y="223" opacity=".44">%%##**++::············::++**##%%@@%%</text>
+      </g>
+      <rect x="0" y="-20" width="310" height="18" fill="#22D3EE" opacity=".08">
+        <animate attributeName="y" values="-20;235;-20" dur="5.5s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+    <text x="72" y="455" font-size="11" letter-spacing="1.5" fill="#64748B">[ PROFILE / TEMPLATE MODE ]</text>
+    <text x="72" y="485" font-size="22" font-weight="700" fill="#F8FAFC">PROFESSIONAL_HEADLINE</text>
+    <text x="72" y="510" font-size="12" fill="#94A3B8">Replace tokens with verified profile data.</text>
+    <text x="72" y="548" font-size="12" fill="#67E8F9">~/profile $ build --ship</text>
+    <rect x="241" y="537" width="8" height="15" rx="1" fill="#67E8F9">
+      <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- divider -->
+  <line x1="464" y1="100" x2="464" y2="555" stroke="#94A3B8" stroke-opacity=".12"/>
+
+  <!-- RIGHT / SYSTEM.INFO -->
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace">
+    <text x="500" y="100" font-size="11" letter-spacing="2.4" fill="#A78BFA">SYSTEM.INFO</text>
+    <text x="500" y="126" font-size="12" fill="#64748B">developer@profile:~$ ./profile.sh</text>
+
+    <g opacity="1">
+      <animate attributeName="opacity" values="0;1;1" keyTimes="0;.12;1" dur="6s" repeatCount="indefinite"/>
+      <text x="500" y="178" font-size="34" font-weight="800" fill="#F8FAFC">YOUR_NAME</text>
+    </g>
+    <text x="500" y="207" font-size="15" fill="url(#accent)" font-weight="700">PRIMARY_ROLE · SECONDARY_ROLE · SPECIALIZATION</text>
+
+    <g opacity="1">
+      <animate attributeName="opacity" values="0;1;1" keyTimes="0;.18;1" begin=".45s" dur="5.8s" repeatCount="indefinite"/>
+      <rect x="500" y="232" width="630" height="160" rx="18" fill="#0F172A" fill-opacity=".34" stroke="#94A3B8" stroke-opacity=".13"/>
+      <text x="528" y="264" font-size="11" fill="#67E8F9">&gt; HEADLINE</text><text x="650" y="264" font-size="12" fill="#E2E8F0">PROFESSIONAL_HEADLINE</text>
+      <text x="528" y="295" font-size="11" fill="#67E8F9">&gt; FOCUS</text><text x="650" y="295" font-size="12" fill="#E2E8F0">CORE_FOCUS_01 · CORE_FOCUS_02</text>
+      <text x="528" y="326" font-size="11" fill="#67E8F9">&gt; BUILDING</text><text x="650" y="326" font-size="12" fill="#E2E8F0">CURRENT_PROJECT_OR_THEME</text>
+      <text x="528" y="357" font-size="11" fill="#67E8F9">&gt; STATUS</text><text x="650" y="357" font-size="12" fill="#A7F3D0">OPEN_TO_BUILDING_USEFUL_THINGS</text>
+    </g>
+
+    <g opacity="1">
+      <animate attributeName="opacity" values="0;1;1" keyTimes="0;.18;1" begin=".8s" dur="5.8s" repeatCount="indefinite"/>
+      <text x="500" y="426" font-size="10" letter-spacing="2" fill="#64748B">ENGINEERING STACK</text>
+      <g font-size="11">
+        <rect x="500" y="443" width="120" height="34" rx="17" fill="#7C3AED" fill-opacity=".09" stroke="#A78BFA" stroke-opacity=".23"/>
+        <circle cx="518" cy="460" r="4" fill="#A78BFA"/><text x="531" y="464" fill="#EDE9FE">TECH_01</text>
+        <rect x="630" y="443" width="120" height="34" rx="17" fill="#22D3EE" fill-opacity=".07" stroke="#67E8F9" stroke-opacity=".20"/>
+        <circle cx="648" cy="460" r="4" fill="#67E8F9"/><text x="661" y="464" fill="#CFFAFE">TECH_02</text>
+        <rect x="760" y="443" width="120" height="34" rx="17" fill="#10B981" fill-opacity=".07" stroke="#6EE7B7" stroke-opacity=".20"/>
+        <circle cx="778" cy="460" r="4" fill="#6EE7B7"/><text x="791" y="464" fill="#D1FAE5">TECH_03</text>
+        <rect x="890" y="443" width="120" height="34" rx="17" fill="#7C3AED" fill-opacity=".09" stroke="#A78BFA" stroke-opacity=".23"/>
+        <circle cx="908" cy="460" r="4" fill="#A78BFA"/><text x="921" y="464" fill="#EDE9FE">TECH_04</text>
+      </g>
+    </g>
+
+    <g opacity="1">
+      <animate attributeName="opacity" values="0;1;1" keyTimes="0;.18;1" begin="1.1s" dur="5.8s" repeatCount="indefinite"/>
+      <text x="500" y="515" font-size="10" letter-spacing="2" fill="#64748B">SELECTED PROOF</text>
+      <rect x="500" y="530" width="630" height="40" rx="12" fill="#020617" fill-opacity=".28" stroke="#94A3B8" stroke-opacity=".10"/>
+      <text x="520" y="555" font-size="12" fill="#CBD5E1">PROJECT_01  ·  PROJECT_02  ·  PROJECT_03</text>
+    </g>
+  </g>
+
+  <rect x="1" y="1" width="1178" height="608" rx="24" fill="none" stroke="#FFFFFF" stroke-opacity=".10"/>
+</svg>
